@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | News homepage</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <!-- nav -->
   <nav>
     <div>
-      <img src="assets/images/logo.svg" alt="logo">
+      <a href="index.html">
+        <img class="logo" src="assets/images/logo.svg" alt="logo">
+      </a>
     </div>
-    <button type="menu">
-      <img src="assets/images/icon-menu.svg" alt="icon-menu">
-      <img src="assets/images/icon-menu-close.svg" alt="icon-close">
+    <button type="menu" class="btn" id="btn-toggle" style="display: none;">
+      <img class="icon-menu" id="hamburger-menu" src="assets/images/icon-menu.svg" alt="icon-menu">
+      <img class="icon-close" id="hamburger-close" src="assets/images/icon-menu-close.svg" alt="icon-close">
     </button>
 
-    <ul>
+    <ul class="menu" id="menu-list">
       <li>
         <a href="#">Home</a>
       </li>
@@ -37,36 +41,86 @@
     </ul>
   </nav>
   <!-- nav -->
-  The Bright Future of Web 3.0?
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  <!-- web 3 grid section -->
+  <div class="grid-container">
+    <div class="grid-row">
+      <div>
+        <picture>
+          <source media="(min-width: 640px)" srcset="assets/images/image-web-3-desktop.jpg">
+          <source media="(min-width: 400px)" srcset="assets/images/image-web-3-mobile.jpg">
+          <img class="web-3-img" src="assets/images/image-web-3-desktop.jpg" alt="web-3-Desktop">
+        </picture>
+                <!-- new articles -->
+        <div>
+          <h1>The Bright Future of Web 3.0?</h1>
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+            of the people.
+            But is it really fulfilling its promise?</p>
+          <a href="#" class="btn__read">Read more</a>
+        </div>
+      </div>
+        <!-- new artciles -->
+        <div class="article-side__box">
+          <div>
+            <h2>New</h2>
+            <h3>
+              Hydrogen VS Electric Cars
+            </h3>
+            <p>
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr>
+          <div>
+            <h3>
+              The Downsides of AI Artistry
+            </h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>
+          <hr>
+          <div>
+            <h3>
+              Is VC Funding Drying Up?
+            </h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+        </div>
 
-  Read more
+    
+    </div>
+  </div>
 
-  New 
+  <!-- web 3 grid section -->
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <script src="js/script.js"></script>
+  <!-- numerical article sections -->
+  <div class="container__numerical">
+    <div class="numerical__row">
+      <div>
+        <img class="numerical__img" src="assets/images/image-retro-pcs.jpg" alt="retro pcs">
+        <h3> 01</h3>
+        <p>Reviving Retro PCs</p>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+      <div>
+        <img class="numerical__img" src="assets/images/image-top-laptops.jpg" alt="top laptops">
+        <h3>02</h3>
+        <p>Top 10 Laptops of 2022</p>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+      <div>
+        <img class="numerical__img" src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+        <h3> 03</h3>
+        <p>The Growth of Gaming</p>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+  <!-- numerical article sections -->
+<script src="js/script.js"></script>
 </body>
 </html>
