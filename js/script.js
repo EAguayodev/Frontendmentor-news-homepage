@@ -1,0 +1,1 @@
+const toggleButton = document.getElementById('btn-toggle');

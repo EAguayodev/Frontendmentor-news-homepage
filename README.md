@@ -38,15 +38,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://frontendmentor-news-homepage-sandy.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
 - CSS Grid
 - Desktop-first workflow
 
@@ -58,7 +56,35 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<nav>
+    <div>
+      <a href="index.html">
+        <img class="logo" src="assets/images/logo.svg" alt="logo">
+      </a>
+    </div>
+    <button type="menu" class="btn" id="btn-toggle" style="display: none;">
+      <img class="icon-menu" id="hamburger-menu" src="assets/images/icon-menu.svg" alt="icon-menu">
+      <img class="icon-close" id="hamburger-close" src="assets/images/icon-menu-close.svg" alt="icon-close">
+    </button>
+
+    <ul class="menu" id="menu-list">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">New</a>
+      </li>
+      <li>
+        <a href="#">Popular</a>
+      </li>
+      <li>
+        <a href="#">Trending</a>
+      </li>
+      <li>
+        <a href="#">Categories</a>
+      </li>
+    </ul>
+  </nav>
 ```
 ```css
 .proud-of-this-css {
@@ -71,8 +97,6 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -80,8 +104,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Malven](https://grid.malven.co/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [w3schools](https://www.w3schools.com/css/css_grid.asp) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
 ## Author

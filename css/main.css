@@ -30,15 +30,19 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem 0;
 }
 
-.btn {
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
+.logo{
+    position: relative;
+    left: 4rem;
 }
+
+.btn {
+    display: none;
+}
+
 .menu {
     display: flex;
     list-style: none;
@@ -46,6 +50,8 @@ nav{
     color: var(--Dark-grayish-blue);
     padding: 10px 20px;
     gap: 2.5rem;
+    position: relative;
+    right: 2.5rem;
 }
 
 .menu a{
@@ -57,18 +63,31 @@ nav{
     color: var(--Soft-red);
 }
 
-/* .icon-menu {
-
+.grid-container{
+    padding: 0 75px;
 }
-
-.icon-close {
-
-} */
 
 .grid-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
     gap: 40px;
+}
+
+.future__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.future__box .box__description{
+    color: var(--Dark-grayish-blue);
+    font-family: var(--font-family);
+    line-height: 23px;
+    position: relative;
+    top: 2rem;
+    font-size: var(--paragraph);
+    width: 21rem;
 }
 
 .grid-row h1{
@@ -76,10 +95,17 @@ nav{
     font-family: var(--font-family);
     font-weight: 800;
     width: 260px;
+    position: relative;
+    top: 1.5rem;
 }
 
 .grid-row p{
-    color: var(--Grayish-blue);
+    color: var(--Very-grayish-blue);
+    line-height: 23px;
+    position: relative;
+    top: 0.5rem;
+    font-size: var(--paragraph);
+    font-family: var(--font-family);
 }
 
 .web-3-img {
@@ -88,7 +114,19 @@ nav{
 }
 
 .btn__read {
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    padding: 14px 45px;
+    text-decoration: none;
+    font-size: var(--paragraph);
+    font-family: var(--font-family);
+    font-weight: 700;
+    position: relative;
+    top: 5rem;
+}
 
+.btn__read:hover{
+    background-color: var(--Very-dark-blue);
 }
 
 .article-side__box {
@@ -101,43 +139,106 @@ nav{
 .article-side__box h2{
     color: var(--Soft-orange);
     font-size: 40px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family);
 }
 
-.article-side__box h3{
+.article-side__box a{
     color: var(--Off-white);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.article-side__box a:hover{
+    color: var(--Soft-orange);
 }
 
 .article-side__box p{
-    margin-bottom: 1rem;
+    color: var(--Grayish-blue);
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     line-height: 23px;
 }
 
 hr{
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
 }
-/* footer rows */
+/* number article grid styles */
 .numerical__row {
-    display: flex;
-    flex-direction: row;
-}
-
-.numerical__row > div{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .numerical__row h3{
     color: var(--Grayish-blue);
-    font-size: 28px;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.numerical__row a{
+    color: var(--Very-dark-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    position: relative;
+    top: 0.5rem;
+}
+
+.numerical__row p{
+    font-size: var(--paragraph);
+    font-family: var(--font-family);
+    color: var(--Dark-grayish-blue);
+    position: relative;
+    top: 0.9rem;
+    line-height: 1.7rem;
+}
+
+
+.numerical__row a:hover{
+    color: var(--Soft-red);
+    font-family: var(--font-family);
+    font-weight: 700;
 }
 
 .numerical__img{
+    position: relative;
+    left: 5rem;
     width: 6.3rem;
 }
 /* footer rows */
 
 @media(max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    .icon-close{
+        display: none;
+    }
+
+    .icon-close.show{
+        display: block;
+    }
+
+    .btn{
+        display: block;
+    }
+
+    .menu.show{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .icon-menu {
+        display: block;
+        z-index: 5;
+    }
 
 }
