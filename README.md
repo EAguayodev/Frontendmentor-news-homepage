@@ -87,8 +87,15 @@ To see how you can add code snippets, see below:
   </nav>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.menu {
+    display: flex;
+    list-style: none;
+    font-family: var(--font-family);
+    color: var(--Dark-grayish-blue);
+    padding: 10px 20px;
+    gap: 2.5rem;
+    position: relative;
+    right: 2.5rem;
 }
 ```
 ```js
