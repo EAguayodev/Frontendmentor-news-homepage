@@ -221,6 +221,7 @@ hr{
     .grid-row{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 140px;
     }
 
     .web-3-img {
