@@ -226,6 +226,8 @@ hr{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 140px;
+        position: relative;
+        left: -0.5rem;
     }
 
     .web-3-img {
@@ -265,6 +267,22 @@ hr{
         grid-template-columns: repeat(2, 1fr);
         top: -6rem;
         position: relative;
+    }
+
+    .numerical__row h3{
+        margin-left: -39px;
+        margin-top: 5px;
+    }
+
+    .numerical__row p{
+        margin-left: -39px;
+        margin-top: 5px;
+        width: 13rem;
+    }
+
+    .numerical__row a{
+        margin-left: -39px;
+        margin-top: 5px;
     }
 
     .numerical__img{
