@@ -234,20 +234,25 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
     .menu{
-        display: none;
+        /* display: none; */
         background-color: var(--Off-white);
     }
 
     .icon-close{
-        display: none;
+        /* display: none; */
     }
 
     .icon-close.show{
+        width: 16rem;
         display: block;
+        position: relative;
+        left: 5rem;
+        z-index: 5;
     }
 
     .btn{
-        display: block;
+        display: inline-block;
+        z-index: 5;
     }
 
     .numerical__row {
@@ -256,8 +261,17 @@ hr{
     }
 
     .menu.show{
-        display: flex;
+        /* display: block; */
         flex-direction: column;
+        gap: 1rem;
+        background-color: var(--Off-white);
+        position: relative;
+        top: 4rem;
+        width: 16rem;
+        height: 41.8rem;
+        box-shadow: -72px -3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -72px -3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -72px -3px 5px 0px rgba(0,0,0,0.75);
     }
 
     .icon-menu {
