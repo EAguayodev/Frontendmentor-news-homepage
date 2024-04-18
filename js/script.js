@@ -5,8 +5,17 @@ const menuClose = document.getElementById('hamburger-close');
 toggleButton.addEventListener('click', function(){
     if (menuToggle) {
         document.getElementById('menu-list').style.display = 'block';
-        menuClose.classList.toggle('hamburger-close');
     } else {
         document.getElementById('menu-list').style.display = 'none';
+        
+    }
+})
+
+menuClose.addEventListener('click', function(){
+    if (menuToggle) {
+        document.getElementById('menu-list').style.display = 'none';
+    } else {
+        document.getElementById('menu-list').style.display = 'block';
+        
     }
 })
