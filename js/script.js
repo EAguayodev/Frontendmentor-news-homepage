@@ -1,20 +1,12 @@
-// function openWindows() {
-//     document.getElementById('menu-list').style.display = 'block';
-// }
-
-// function closeWindows() {
-//     document.getElementById('menu-list').style.display = 'none';
-// }
-
 const toggleButton = document.getElementById('hamburger-menu');
 const menuToggle = document.getElementById('menu-list');
-
-// TODO: start toggle tomorrow morning
+const menuClose = document.getElementById('hamburger-close');
 
 toggleButton.addEventListener('click', function(){
     if (menuToggle) {
-        menuToggle.classList.add('show');
+        document.getElementById('menu-list').style.display = 'block';
+        menuClose.classList.toggle('hamburger-close');
     } else {
-        menuToggle.classList.remove('show');
+        document.getElementById('menu-list').style.display = 'none';
     }
 })

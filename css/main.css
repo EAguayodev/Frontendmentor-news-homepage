@@ -43,6 +43,10 @@ nav{
     display: none;
 }
 
+.icon-close{
+    display: none;
+}
+
 .menu {
     display: flex;
     list-style: none;
@@ -240,15 +244,12 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .icon-close{
-        /* display: none; */
-    }
-
-    .icon-close.show{
+    .menu .icon-close{
         display: block;
-        position: relative;
-        left: 5rem;
-        z-index: 0;
+        width: 31px;
+        margin-top: 31px;
+        margin-left: 10rem;
+        z-index: 5;
     }
 
     .btn{
@@ -295,7 +296,7 @@ hr{
         background-color: var(--Off-white);
     }
 
-    .menu.show{
+    .menu.show {
         flex-direction: column;
         gap: 1.5rem;
         position: absolute;
@@ -314,7 +315,7 @@ hr{
 
     .menu li{
         position: relative;
-        top: 8.5rem;
+        top: 2rem;
         font-weight: 500;
     }
 
@@ -323,5 +324,4 @@ hr{
         display: block;
         z-index: 5;
     }
-
 }
