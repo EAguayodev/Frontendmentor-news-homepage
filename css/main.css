@@ -24,8 +24,12 @@
 --paragraph: 15px;
 }
 
-body{
+html{
     --font-family : "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--Off-white);
 }
 
 nav{
