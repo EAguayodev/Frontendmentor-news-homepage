@@ -147,7 +147,7 @@ This structured approach to learning and development not only prepares me for fu
 ### Useful resources
 
 - [Malven](https://grid.malven.co/) - This helped me for determine which approach to use for css grid for using grid rows or grid columns for the project.
-- [w3schools](https://www.w3schools.com/css/css_grid.asp) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [w3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) - W3schools website helped tackle which way I was going to use JavaScript to make the navigation menu on mobile display when clicked for opening and closing the menu.
 
 
 ## Author
