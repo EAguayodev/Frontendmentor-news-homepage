@@ -297,7 +297,7 @@ hr{
     }
 
     .menu{
-        visibility: hidden;
+        display: none;
         background-color: var(--Off-white);
     }
 
@@ -311,7 +311,7 @@ hr{
         height: 41.8rem;
         z-index: 5;
         overflow-x: hidden;
-        transition: 10s;
+        transition: 18s;
         box-shadow: -157px -3px 0px 2px rgba(0,0,0,0.51);
         -webkit-box-shadow: -157px -3px 0px 2px rgba(0,0,0,0.51);
         -moz-box-shadow: -130px -3px 0px 2px rgba(0,0,0,0.51);
