@@ -24,12 +24,9 @@
     --paragraph: 15px;
 }
 
-html {
-    --font-family: "Inter", sans-serif;
-}
-
 body {
     background-color: var(--Off-white);
+    --font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -107,10 +104,10 @@ nav {
 }
 
 .grid-row h1 {
-    font-size: 50px;
+    color: var(--Very-dark-blue);
+    font-size: 3.125rem;
     font-family: var(--font-family);
     font-weight: 800;
-    width: 260px;
     position: relative;
     top: 1.5rem;
 }
@@ -124,10 +121,6 @@ nav {
     font-family: var(--font-family);
 }
 
-.web-3-img {
-    width: 45.7rem;
-    height: 18.8rem;
-}
 
 .btn__read {
     background-color: var(--Soft-red);
@@ -162,7 +155,7 @@ nav {
     color: var(--Off-white);
     margin-bottom: 2rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     font-family: var(--font-family);
     font-weight: 700;
     cursor: pointer;
@@ -177,6 +170,7 @@ nav {
     margin-top: 0rem;
     margin-bottom: 0rem;
     line-height: 23px;
+    width: 18.875rem;
 }
 
 hr {
@@ -194,8 +188,8 @@ hr {
 }
 
 .numerical__row h3 {
-    color: var(--Grayish-blue);
-    font-size: 32px;
+    color: var(--Soft-red);
+    font-size: 2rem;
     text-decoration: none;
 }
 
@@ -216,6 +210,7 @@ hr {
     position: relative;
     top: 0.9rem;
     line-height: 1.7rem;
+    width: 14.125rem;
 }
 
 
@@ -228,12 +223,33 @@ hr {
 .numerical__img {
     position: relative;
     left: 5rem;
-    width: 6.3rem;
+    width: 100%;
+    max-width: 6.25rem;
 }
 
 /* footer rows */
 
-@media(max-width: 768px) {
+/* tablet layout */
+@media(max-width: 64rem) {
+    .grid-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .future__box{
+        gap: 40px;
+    }
+
+    .numerical__row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .numerical__img{
+        margin: 10px 0;
+    }
+}
+
+/* mobile layout */
+@media(max-width: 48rem) {
 
     .container{
         margin: 0;
@@ -256,7 +272,6 @@ hr {
     }
 
     .web-3-img {
-        width: 21.5rem;
         height: 18.8rem;
     }
 
@@ -287,6 +302,7 @@ hr {
     .numerical__row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 -11px;
     }
 
     .numerical__row h3 {
